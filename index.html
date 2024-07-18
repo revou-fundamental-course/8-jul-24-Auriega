@@ -16,7 +16,7 @@
 
     <main> 
         <!-- Left Content -->
-        <section>
+        <section class="main-content">
             <!-- Main Article -->
             <article>
                 <p>BMI(Body Mass Index) adalah sebuah indikator yang digunakan untuk menilai apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi dan berat badannya. Metode ini melibatkan perhitungan dengan rumus di mana berat badan seseorang dalam kilogram dibagi dengan kuadrat dari tinggi badannya dalam meter. </p>
@@ -27,6 +27,7 @@
             <section>
                 <form>
                     <div>
+                        <div class="input-title">Jenis Kelamin</div>
                         <input type="radio" id="selection-man"><label for="selection-man">Laki-Laki</label>
                         <input type="radio" id="selection-woman"><label for="selection-woman">Perempuan</label>
                     </div>
@@ -43,8 +44,8 @@
                         <input type="number" id="input-tinggi-badan">
                     </div>
                     <div>
-                        <button>Submit BMI</button>
-                        <button>Reset</button>
+                        <button class="button submit">Submit BMI</button>
+                        <button class="button reset">Reset</button>
                     </div>
                 </form>
             </section>
@@ -68,7 +69,7 @@
         
 
         <!-- Right Content -->
-        <section>
+        <section class="main-content">
             <!-- Result Article -->
             <article>
                 <header>
@@ -76,7 +77,14 @@
                 </header>
 
                 <!-- Result Section -->
-                <section></section>
+                <section class="result-section">
+                    <p>Hasil tersebut adalah</p>
+
+                    <h2>24.7</h2>
+
+                    <p>Anda memiliki Berat Badan Berlebih</p>
+
+                </section>
 
                 <!-- Result Article -->
                 <article></article>

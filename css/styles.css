@@ -7,3 +7,57 @@ main {
     display: flex;
     justify-content:space-around ;
 }
+
+.main-content {
+    border: 1px solid;
+    flex: 1;
+    padding: 12px;
+}
+
+.input-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form{
+    background-color: pink;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.button {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.submit {
+    background-color: rgb(252, 255, 176);
+    border: 7px solid rgb(255, 0, 157);
+}
+
+.reset{
+    background-color: lightcyan;
+    border: 3px solid lightsalmon;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12 px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid white
+    -webkit-transition:rgb(255, 51, 0);
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=number]:focus {
+    border: 3px solid #ff0051
+}
+
+.result-section{
+    text-align: center;
+    background-color: rgb(206, 169, 225);
+    border-radius: 8px;
+    padding: 12px
+}
