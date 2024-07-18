@@ -1,8 +1,9 @@
- 
+ /* Menngatur judul utama ke tengah */
 .main-title {
     text-align: center;
 }
 
+/* Mengatur layout utama dengan flexbox untuk mengatur jarak antara elemen */
 main {
     display: flex;
     justify-content:space-around ;
@@ -17,6 +18,7 @@ main {
 .input-title{
     font-size: 14px;
     font-weight: bold;
+
 }
 
 form{
@@ -35,11 +37,13 @@ form{
     border: 7px solid rgb(255, 0, 157);
 }
 
+/* Mengatur gaya tombol reset dengan warna background dan border */
 .reset{
     background-color: lightcyan;
     border: 3px solid lightsalmon;
 }
 
+/* Mengatur gaya input tipe number dengan lebar penuh, padding, margin, dan border */
 input[type=number] {
     width: 100%;
     padding: 12 px 20px;
