@@ -59,5 +59,15 @@ input[type=number]:focus {
     text-align: center;
     background-color: rgb(206, 169, 225);
     border-radius: 8px;
-    padding: 12px
+    padding: 12px 
+}
+
+@media only screen and (max-width: 435px;) {
+    main  {
+        flex-direction: column;
+    }
+}
+
+.result-content{
+    display: block !important;
 }

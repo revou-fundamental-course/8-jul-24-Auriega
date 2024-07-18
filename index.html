@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -14,12 +14,12 @@
         <h1>Kalkulator BMI</h1>
     </header>
 
-    <main> 
+    <main>
         <!-- Left Content -->
         <section class="main-content">
             <!-- Main Article -->
             <article>
-                <p>BMI(Body Mass Index) adalah sebuah indikator yang digunakan untuk menilai apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi dan berat badannya. Metode ini melibatkan perhitungan dengan rumus di mana berat badan seseorang dalam kilogram dibagi dengan kuadrat dari tinggi badannya dalam meter. </p>
+                <p>BMI (Body Mass Index) adalah sebuah indikator yang digunakan untuk menilai apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi dan berat badannya. Metode ini melibatkan perhitungan dengan rumus di mana berat badan seseorang dalam kilogram dibagi dengan kuadrat dari tinggi badannya dalam meter. </p>
                 <p>Meskipun BMI adalah alat yang umum digunakan untuk mendapatkan gambaran tentang kondisi berat badan seseorang, perlu diingat bahwa BMI tidak mempertimbangkan faktor lain seperti komposisi tubuh, distribusi lemak, atau kondisi kesehatan spesifik individu. Oleh karena itu, meskipun bermanfaat sebagai alat skrining awal, penilaian kesehatan yang komprehensif sebaiknya melibatkan faktor-faktor lain selain BMI.</p>
             </article>
 
@@ -28,8 +28,8 @@
                 <form>
                     <div>
                         <div class="input-title">Jenis Kelamin</div>
-                        <input type="radio" id="selection-man"><label for="selection-man">Laki-Laki</label>
-                        <input type="radio" id="selection-woman"><label for="selection-woman">Perempuan</label>
+                        <input type="radio" id="selection-man" name="gender"><label for="selection-man">Laki-Laki</label>
+                        <input type="radio" id="selection-woman" name="gender"><label for="selection-woman">Perempuan</label>
                     </div>
                     <div>
                         <label for="input-berat-badan">Berat Badan (kg)</label>
@@ -44,13 +44,13 @@
                         <input type="number" id="input-tinggi-badan">
                     </div>
                     <div>
-                        <button class="button submit">Submit BMI</button>
-                        <button class="button reset">Reset</button>
+                        <button class="button submit" type="button" onclick="updateResult()">Submit BMI</button>
+                        <button class="button reset" type="button" onclick="resetForm()">Reset</button>
                     </div>
                 </form>
             </section>
 
-            <!-- Form article --> 
+            <!-- Form article -->
             <section>
                 <header>
                     <h2>Manfaat BMI</h2>
@@ -59,14 +59,14 @@
                 <article>
                     <ol>
                         <li>Skrining Sederhana: menilai status berat badan ideal</li>
-                        <li>Meningkatkan Kesadaran Pribadi:  memotivasi untuk mengambil tindakan yang diperlukan demi mencapai/mempertahankan berat badan yang sehat. </li>
+                        <li>Meningkatkan Kesadaran Pribadi: memotivasi untuk mengambil tindakan yang diperlukan demi mencapai/mempertahankan berat badan yang sehat. </li>
                         <li>Monitoring Perubahan Berat Badan: memantau perubahan berat badan dari waktu ke waktu, yang penting dalam program pengelolaan berat badan, baik untuk penurunan berat badan maupun peningkatan berat badan.</li>
                     </ol>
                 </article>
 
             </section>
         </section>
-        
+
 
         <!-- Right Content -->
         <section class="main-content">
@@ -80,21 +80,22 @@
                 <section class="result-section">
                     <p>Hasil tersebut adalah</p>
 
-                    <h2>24.7</h2>
+                    <h2 id="bmi-result">-</h2>
 
-                    <p>Anda memiliki Berat Badan Berlebih</p>
+                    <p id="bmi-description">Silakan masukkan data untuk melihat hasil.</p>
 
                 </section>
 
                 <!-- Result Article -->
                 <article></article>
-        
+
                 <!-- General Information -->
                 <section></section>
             </article>
         </section>
     </main>
+
+    <script src="js/scripts.js"></script>
+
 </body>
-
-
 </html>
